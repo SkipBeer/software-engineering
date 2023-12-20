@@ -1,0 +1,11 @@
+import math
+
+x = lambda z: z**2 + 3
+y = lambda: math.sin(4)
+f = lambda x, y: x + y
+
+print("Введите значение z: ")
+try:
+    print(f(x(int(input())), y()))
+except ValueError:
+    pass
